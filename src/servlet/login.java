@@ -67,9 +67,8 @@ public class login extends HttpServlet {
 		        	    	/**
 		        	    	 * 也要检查上下文总人数
 		        	    	 */
-		        	    	if(count!=null) {
-				        		context.setAttribute("count", ++count);
-				        	}else {
+		        	    	if(count==null) {
+				        		
 								context.setAttribute("count", 1);
 							}
 		        	    	/**
