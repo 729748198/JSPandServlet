@@ -24,5 +24,6 @@
 	%>
 	<p><%=request.getAttribute("meg") %></p>
 <% }%>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

@@ -32,7 +32,7 @@ for(int i =0;i<Cookies.length;i++){
 
 %>
 <body>
-<p>恭喜您，<%= request.getSession().getAttribute("user")%>,登录成功！,登录次数为<%=now %>,当前总登录人数<%=count %><p>
+<h2>恭喜您，<%= request.getSession().getAttribute("user")%>,登录成功！,登录次数为<%=now %>,当前总登录人数<%=count %></h2>>
 	<%
 	if(now>4){
 		
@@ -46,7 +46,7 @@ for(int i =0;i<Cookies.length;i++){
 <a href="http://localhost:8080/JSPandServlet/addNews.jsp">1.插入新闻</a><br>
 <a href="http://localhost:8080/JSPandServlet/selectNews.jsp">2.查找新闻</a><br>
 <a href="http://localhost:8080/JSPandServlet/playgames.jsp">3.玩游戏：猜数字</a><br>
-
-
+<a href="http://localhost:8080/JSPandServlet/chengfabiao.jsp">4.九九乘法表</a><br>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
