@@ -27,7 +27,7 @@ public class PlayGamesServlet extends HttpServlet {
 		if(number>integer) {
 			msgString="猜大啦！";
 		}else if (number==integer) {
-			msgString="猜中了！"; 
+			msgString="猜中了！恭喜"; 
 		}else {
 			msgString="猜小了！";
 		}
