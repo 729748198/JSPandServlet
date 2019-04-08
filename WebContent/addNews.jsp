@@ -14,7 +14,7 @@
 <p>请输入新闻标题</p>
 <input type="text" name="title"/>
 <p>请输入新闻内容</p>
-<input type="text" name="content"/>
+<input type="text" name="content"/> 
 <p>请输入新闻时间</p>
 <input type="text" name="time"/>
 <p>请输入新闻作者</p>
