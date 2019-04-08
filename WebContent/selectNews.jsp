@@ -11,7 +11,7 @@
 <h1>新闻查找</h1>
 <p>请输入新闻ID</p>
 <input type="text" name="id"/>
-<input type="submit" value="提交"/>
+<input type="submit" value="提交"/> 
 </form>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
