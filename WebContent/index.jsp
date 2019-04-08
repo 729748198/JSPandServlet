@@ -13,7 +13,7 @@
 </head>
 <%
 //获取上下文
-ServletContext context=this.getServletContext();
+ServletContext context=this.getServletContext(); 
 //总登录人数
 Integer count=(Integer)context.getAttribute("count");
 //当前用户
