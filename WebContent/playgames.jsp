@@ -11,7 +11,7 @@
 <meta charset="UTF-8">
 <title>玩游戏</title>
 </head>
-<body>
+<body> 
 <h1>来猜数字吧</h1>
 <form action="http://localhost:8080/JSPandServlet/playGames" method="get">
 用户名:<input type="text" name="user">
