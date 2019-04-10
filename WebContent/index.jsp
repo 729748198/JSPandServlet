@@ -18,6 +18,9 @@ ServletContext context=this.getServletContext();
 Integer count=(Integer)context.getAttribute("count");
 //当前用户
 String user=(String)request.getSession().getAttribute("user");
+if(user==null){
+	response.sendRedirect("login.jsp");
+}
 Integer now=1;	
 Cookie[] Cookies = request.getCookies();  
 for(int i =0;i<Cookies.length;i++){  
@@ -32,7 +35,7 @@ for(int i =0;i<Cookies.length;i++){
 
 %>
 <body>
-<h2>恭喜您，<%= request.getSession().getAttribute("user")%>,登录成功！,登录次数为<%=now %>,当前总登录人数<%=count %></h2>>
+<h2>恭喜您，<%= request.getSession().getAttribute("user")%>,登录成功！,登录次数为<%=now %>,当前总登录人数<%=count %></h2>
 	<%
 	if(now>4){
 		
@@ -47,6 +50,8 @@ for(int i =0;i<Cookies.length;i++){
 <a href="http://localhost:8080/JSPandServlet/selectNews.jsp">2.查找新闻</a><br>
 <a href="http://localhost:8080/JSPandServlet/playgames.jsp">3.玩游戏：猜数字</a><br>
 <a href="http://localhost:8080/JSPandServlet/chengfabiao.jsp">4.九九乘法表</a><br>
+<a href="http://localhost:8080/JSPandServlet/Jsp/login.jsp">5.使用JSP进行登录验证</a><br>
+<a href="http://localhost:8080/JSPandServlet/JavaBean.jsp">6.使用JavaBean</a><br>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
