@@ -1,39 +1,45 @@
 package vo;
 
 public class News {
-	int NewsID;
-	String NewsTitle;
-	String NewsContent;
-	String NewsTime;
-	String AdminName;
+	private int newsID;
+	private	String newsTitle;
+	private String newsContent;
+	private String newsTime;
+	private String adminName;
+	
+	
+	public News() {
+	
+	}
 	public int getNewsID() {
-		return NewsID;
+		return newsID;
 	}
 	public void setNewsID(int newsID) {
-		NewsID = newsID;
+		this.newsID = newsID;
 	}
 	public String getNewsTitle() {
-		return NewsTitle;
+		return newsTitle;
 	}
 	public void setNewsTitle(String newsTitle) {
-		NewsTitle = newsTitle;
+		this.newsTitle = newsTitle;
 	}
 	public String getNewsContent() {
-		return NewsContent;
+		return newsContent;
 	}
 	public void setNewsContent(String newsContent) {
-		NewsContent = newsContent;
+		this.newsContent = newsContent;
 	}
 	public String getNewsTime() {
-		return NewsTime;
+		return newsTime;
 	}
 	public void setNewsTime(String newsTime) {
-		NewsTime = newsTime;
+		this.newsTime = newsTime;
 	}
 	public String getAdminName() {
-		return AdminName;
+		return adminName;
 	}
 	public void setAdminName(String adminName) {
-		AdminName = adminName;
+		this.adminName = adminName;
 	}
+
 }
