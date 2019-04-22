@@ -3,8 +3,12 @@
 这是江科大软件工程大三 JSP&Servlet 课程的课堂项目，我会把每次的作业都上传至此。
 
 ## 前言
-1.运行环境：jdk1.8.0_201 ,apache-tomcat-9.0.16,mysql-5.7.25-winx64
-2.编译器：Eclipse
+### 1.运行环境：
+* jdk1.8.0_201 
+* apache-tomcat-9.0.16
+* mysql-5.7.25-winx64
+
+### 2.编译器：Eclipse
 
 请注意！此项目实现了每次的作业功能，但是没有按书上的代码编写！
 
@@ -70,3 +74,10 @@ public class HelloTag extends SimpleTagSupport {
 ```
 
 这样，就在页面显示 Hello Tag By 贺文杰!
+
+## 4月22日——使用EL表达式
+1.在JSP页面第一句%@中加入一句声明isELIgnored="false"
+2.直接在页面中使用${}。
+3.获取JavaBean的属性，只需要通过.符号操作就可以了。
+
+像这样 ${hero.name} ，就会自动调用getName方法了
