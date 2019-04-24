@@ -53,7 +53,7 @@ for(int i =0;i<Cookies.length;i++){
 <a href="http://localhost:8080/JSPandServlet/Jsp/login.jsp">5.使用JSP进行登录验证</a><br>
 <a href="http://localhost:8080/JSPandServlet/JavaBean.jsp">6.使用JavaBean</a><br>
 <a href="http://localhost:8080/JSPandServlet/math.jsp">6.数学运算</a><br>
-
+<a href="http://localhost:8080/JSPandServlet/jstl.jsp">8.使用JSTL表达式</a><br>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
