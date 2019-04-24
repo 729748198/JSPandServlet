@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,14 +25,23 @@
 	<!-- 设置属性的方法2:利用jsp:setProperty -->
 	<jsp:setProperty property="adminName" name="News" value="<%=name %>" />
 	<p>输入的新闻为</p>
-	
+	<h1 style="color: green;">使用javaBean获取</h1>
 	<!-- 获取属性的方法1：  -->
-	<h1><%=News.getNewsID() %></h1>
-	<h1><%=News.getNewsTitle() %></h1>
-	<h1><%=News.getNewsContent() %></h1>
-	<h1><%=News.getNewsTime() %></h1>
-	
+	<h2><%=News.getNewsID() %></h2>
+	<h2><%=News.getNewsTitle() %></h2>
+	<h2><%=News.getNewsContent() %></h2>
+	<h2><%=News.getNewsTime() %></h2>
+
 	<!-- 获取属性的方法2:使用jsp:getProperty -->
 	<h1><jsp:getProperty property="adminName" name="News"/></h1>
+	
+	<h2 style="color: blue;">使用EL表达式</h2>
+	<h2>${News.newsID }</h2>
+	<h2>${News.newsTitle }</h2>
+	<h2>${News.newsContent }</h2>
+	<h2>${News.newsTime }</h2>
+	<h2>${News.adminName }</h2>
+	
+	
 </body>
 </html>
