@@ -81,3 +81,32 @@ public class HelloTag extends SimpleTagSupport {
 3.获取JavaBean的属性，只需要通过.符号操作就可以了。
 
 像这样 ${hero.name} ，就会自动调用getName方法了
+
+## 4月24日——使用JSTL表达式。
+作业目录：jstl.jsp
+
+首先要下载依赖jar包，jstl.jar和standard.jar
+
+在头文件中引入声明
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+今天的作业是用if表达式
+
+<c:if test="写判断语句">
+</c:if>
+
+没有else
+
+<b>这是我的作业：判断当前用户是否登录，登录成功就显示Hello, Welcome,否则显示请登录<b>
+
+```
+<body>
+<c:if test="${user!=null}">
+Hello ,Welcome ${user }
+</c:if>
+<c:if test="${user==null}">
+请登录
+</c:if>
+</body>
+```
