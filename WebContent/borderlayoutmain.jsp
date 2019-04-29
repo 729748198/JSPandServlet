@@ -188,7 +188,6 @@
                 <div title="欢迎使用" style="padding: 20px; overflow: hidden;" id="home">
                     <h1>Welcome to jQuery UI!</h1>
                     <h1>您可以选择:</h1>
-                    
                 </div>
             </div>
         </div>
