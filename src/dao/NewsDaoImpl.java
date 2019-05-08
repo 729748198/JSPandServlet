@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.google.gson.Gson;
+
 import vo.News;
 
 public class NewsDaoImpl implements NewsDao {
@@ -26,15 +28,20 @@ public class NewsDaoImpl implements NewsDao {
 		{
 			int NewsID = rs.getInt("NewsID");
 			String NewsTitle = rs.getString("NewsTitle");
+			String content=rs.getString("NewsContent");
 			String NewsTime = rs.getString("NewsTime");
 			String AdminName = rs.getString("AdminName");
 			News news=new News();
 			news.setNewsID(NewsID);
 			news.setNewsTitle(NewsTitle);
+			news.setNewsContent(content);
 			news.setNewsTime(NewsTime);
 			news.setAdminName(AdminName);
 			list.add(news);
+			
 		}
+		Gson gson=new Gson();
+		System.out.println(gson.toJson(list));
 		return list;
 	}
 

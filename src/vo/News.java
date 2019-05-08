@@ -6,8 +6,7 @@ public class News {
 	private String newsContent;
 	private String newsTime;
 	private String adminName;
-	
-	
+
 	public News() {
 	
 	}

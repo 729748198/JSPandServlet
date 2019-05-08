@@ -19,6 +19,25 @@ xmlns="http://xmlns.jcp.org/xml/ns/javaee"
     <param-value>729748198@qq.com</param-value>
   </context-param>
   
+    <servlet>
+  	<servlet-name>SelectAllNews</servlet-name>
+  	<servlet-class>servlet.SelectAllNews</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SelectAllNews</servlet-name>
+  	<url-pattern>/SelectAllNews</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  	<servlet-name>SelectAllUser</servlet-name>
+  	<servlet-class>servlet.SelectAllUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SelectAllUser</servlet-name>
+  	<url-pattern>/SelectAllUser</url-pattern>
+  </servlet-mapping>
+  
+  
   <servlet>
   	<servlet-name>PlayGamesServlet</servlet-name>
   	<servlet-class>servlet.PlayGamesServlet</servlet-class>
